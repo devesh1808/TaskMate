@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Header />
-      <AddTask />
-      <ShowTask />
+      <AddTask tasklist={tasklist} setTasklist={setTasklist} />
+      <ShowTask tasklist={tasklist} setTasklist={setTasklist} />
     </>
   );
 }

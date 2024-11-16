@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ShowTask = () => {
+export const ShowTask = ({ tasklist, setTasklist }) => {
   const tasks = [
     { id: 1001, name: "Task A", time: "02:09:01 AM 14/09/2030" },
     { id: 1002, name: "Task B", time: "02:09:01 AM 15/09/2030" },
