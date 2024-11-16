@@ -1,12 +1,16 @@
-import './App.css'
+import { Header } from "./components/Header";
+import { AddTask } from "./components/AddTask";
+import { ShowTask } from "./components/ShowTask";
+import "./App.css";
 
 function App() {
-
   return (
     <>
-      <h1>Hello World</h1>
+      <Header />
+      <AddTask />
+      <ShowTask />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
