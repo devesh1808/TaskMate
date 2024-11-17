@@ -1,7 +1,10 @@
 import React from "react";
 
 export const ShowTask = ({ tasklist, setTasklist, task, setTask }) => {
-  const handleEdit = () => {};
+  const handleEdit = (id) => {
+    const selectedTask = tasklist.find((todo) => todo.id === id);
+    setTask(selectedTask);
+  };
 
   const handleDelete = (id) => {
     const updatedTaskList = tasklist.filter((todo) => todo.id !== id);
