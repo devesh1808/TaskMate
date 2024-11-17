@@ -14,7 +14,7 @@ export const Header = () => {
         <span className="dark activeTheme"></span>
         <span className="gOne"></span>
         <span className="gTwo"></span>
-        <span className="GThree"></span>
+        <span className="gThree"></span>
       </div>
     </header>
   );
