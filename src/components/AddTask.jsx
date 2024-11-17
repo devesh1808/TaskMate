@@ -39,9 +39,9 @@ export const AddTask = ({ tasklist, setTasklist, task, setTask }) => {
           autoComplete="off"
           placeholder="add task"
           maxLength="25"
-          onChange={(e) => setTask({...task, name: e.target.value})}
+          onChange={(e) => setTask({ ...task, name: e.target.value })}
         />
-        <button type="submit">Add</button>
+        <button type="submit">{task.id ? "Update" : "Add"}</button>
       </form>
     </section>
   );
